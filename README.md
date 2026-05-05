@@ -26,6 +26,7 @@ dotnet run -- --plants 500 --packages 1200 --transfers 40 --waste 25 --repackage
 
 ## Example output
 
+```bash
 ======================================
         TAG TAX GOBLIN REPORT
 ======================================
@@ -55,6 +56,7 @@ Cost per package tag:       $0.86
 Goblin rating:              Tag-Tax Troll
 
 This is operational leakage with a compliance hat and a bad attitude.
+```
 
 ## JSON output
 
