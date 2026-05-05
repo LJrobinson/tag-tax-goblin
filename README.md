@@ -2,13 +2,29 @@
 
 A tiny cannabis operations calculator for estimating the real cost of compliance tags.
 
-Everyone knows the visible tag cost.
-
-This estimates the uglier number: replacement tags, correction labor, repackaging friction, waste events, transfers, and operational leakage.
-
 Because "it's only $0.25 per tag" is how the goblin gets inside the building.
 
+---
+
+## The problem
+
+Compliance tag costs are usually talked about like they are simple, clean, harmless little line items.
+
+"Relax, bro. The tag is only a quarter."
+
+Cool.
+
+Now multiply that quarter across plant tags, package tags, repackaging, waste events, transfer workflows, correction labor, destroyed tags, inventory cleanup, and the human misery tax of fixing avoidable compliance spaghetti.
+
+That is where the goblin lives.
+
+`tag-tax-goblin` estimates the difference between the visible tag cost and the real operational drag created by tag-based cannabis compliance workflows.
+
+---
+
 ## What it calculates
+
+`tag-tax-goblin` estimates:
 
 - Direct tag cost
 - Estimated replacement tag cost
@@ -18,11 +34,21 @@ Because "it's only $0.25 per tag" is how the goblin gets inside the building.
 - Cost per package tag
 - Goblin severity rating
 
+The goal is not to pretend this is a perfect accounting system.
+
+The goal is to give operators a quick way to model the obvious thing everyone feels but nobody wants to put in a spreadsheet:
+
+Tiny compliance costs become real margin leakage when they touch every part of the workflow.
+
+---
+
 ## Example
 
 ```bash
 dotnet run -- --plants 500 --packages 1200 --transfers 40 --waste 25 --repackages 60 --mistake-rate 3.5
 ```
+
+---
 
 ## Example output
 
@@ -58,13 +84,38 @@ Goblin rating:              Tag-Tax Troll
 This is operational leakage with a compliance hat and a bad attitude.
 ```
 
+---
+
+## The punchline
+
+The visible tag cost in this example is:
+
+```bash
+$425.00
+```
+
+The estimated real operational leakage is:
+
+```bash
+$1,027.38
+```
+
+That is the entire point.
+
+The tag itself may only be a quarter.
+
+The workflow attached to the tag is absolutely not.
+
+---
+
 ## JSON output
 
 ```bash
 dotnet run -- --demo --json
 ```
 
-Example
+Example:
+
 ```json
 {
   "TotalTags": 1700,
@@ -80,7 +131,9 @@ Example
 }
 ```
 
-Options
+---
+
+## Options
 
 ```bash
 --plants <number>          Plant tag count
@@ -97,19 +150,116 @@ Options
 --help                     Show help
 ```
 
+---
+
+## Demo mode
+
+Run the goblin with sample cannabis operations numbers:
+
+```bash
+dotnet run -- --demo
+```
+
+Run the same demo with JSON output:
+
+```bash
+dotnet run -- --demo --json
+```
+
+This is useful for quickly showing the difference between visible compliance cost and estimated operational leakage without having to enter a full scenario.
+
+---
+
 ## Why this exists
 
-Cannabis compliance costs are often discussed as simple per-unit fees, but operators feel the cost through labor, corrections, delays, package handling, and inventory cleanup.
+Cannabis compliance costs are often discussed as simple per-unit fees.
 
-This project is intentionally small, but it models a real operational pain point: tiny compliance costs become real margin leakage when multiplied across plant, package, waste, transfer, and correction workflows.
+Operators know better.
 
-Portfolio angle
+The real cost shows up in:
+
+- Labor spent fixing packages
+- Waste and destruction workflows
+- Repackaging events
+- Transfer friction
+- Replacement tags
+- Inventory cleanup
+- Compliance-driven delays
+- The quiet emotional damage of discovering one bad workflow touched 87 packages
+
+This project is intentionally small, but it models a real operational pain point.
+
+A $0.25 tag is not just a $0.25 tag when it lives inside a regulated inventory workflow.
+
+It is a tiny paper gremlin with administrative privileges.
+
+---
+
+## Why this matters
+
+Cannabis operators live inside systems where small compliance requirements compound quickly.
+
+A single tag may be cheap.
+
+A single mistake may be annoying.
+
+A single correction may be manageable.
+
+But at operational scale, those small costs stack into real leakage.
+
+`tag-tax-goblin` gives that leakage a name, a number, and a goblin rating.
+
+Because sometimes the best way to explain margin erosion is to show the monster eating it.
+
+---
+
+## Portfolio angle
 
 This project demonstrates:
 
+```bash
 Cannabis operations domain knowledge
 Compliance workflow modeling
 CLI tool design
 Cost modeling
 Structured JSON output
 Practical inventory analytics thinking
+```
+
+It is intentionally lightweight, but the business context is real:
+
+- Cannabis inventory workflows are compliance-heavy
+- Tagging systems create direct and indirect costs
+- Operators need simple tools to explain hidden operational drag
+- Small costs become meaningful when multiplied across plant, package, waste, transfer, and correction workflows
+
+---
+
+## Suggested use cases
+
+Use this to estimate:
+
+- Monthly tag cost exposure
+- Package correction leakage
+- Repackaging drag
+- Waste event friction
+- Transfer workflow overhead
+- Cost per package tag after hidden labor is included
+
+Or just run it because you too have looked at a compliance workflow and thought:
+
+"Wow, this goblin has a badge."
+
+---
+
+## Disclaimer
+
+This is not accounting software.
+
+This is not compliance advice.
+
+This is a lightweight modeling tool for estimating operational leakage around tag-based cannabis workflows.
+
+Use real internal numbers if you want better estimates.
+
+Use the default numbers if you just want to summon the goblin.
