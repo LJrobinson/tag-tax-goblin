@@ -107,9 +107,9 @@ Portfolio angle
 
 This project demonstrates:
 
-> Cannabis operations domain knowledge
-> Compliance workflow modeling
-> CLI tool design
-> Cost modeling
-> Structured JSON output
-> Practical inventory analytics thinking
+Cannabis operations domain knowledge
+Compliance workflow modeling
+CLI tool design
+Cost modeling
+Structured JSON output
+Practical inventory analytics thinking
