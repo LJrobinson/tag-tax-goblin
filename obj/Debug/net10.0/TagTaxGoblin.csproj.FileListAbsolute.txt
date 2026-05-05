@@ -1,0 +1,14 @@
+G:\TagTaxGoblin\TagTaxGoblin\bin\Debug\net10.0\TagTaxGoblin.exe
+G:\TagTaxGoblin\TagTaxGoblin\bin\Debug\net10.0\TagTaxGoblin.deps.json
+G:\TagTaxGoblin\TagTaxGoblin\bin\Debug\net10.0\TagTaxGoblin.runtimeconfig.json
+G:\TagTaxGoblin\TagTaxGoblin\bin\Debug\net10.0\TagTaxGoblin.dll
+G:\TagTaxGoblin\TagTaxGoblin\bin\Debug\net10.0\TagTaxGoblin.pdb
+G:\TagTaxGoblin\TagTaxGoblin\obj\Debug\net10.0\TagTaxGoblin.GeneratedMSBuildEditorConfig.editorconfig
+G:\TagTaxGoblin\TagTaxGoblin\obj\Debug\net10.0\TagTaxGoblin.AssemblyInfoInputs.cache
+G:\TagTaxGoblin\TagTaxGoblin\obj\Debug\net10.0\TagTaxGoblin.AssemblyInfo.cs
+G:\TagTaxGoblin\TagTaxGoblin\obj\Debug\net10.0\TagTaxGoblin.csproj.CoreCompileInputs.cache
+G:\TagTaxGoblin\TagTaxGoblin\obj\Debug\net10.0\TagTaxGoblin.dll
+G:\TagTaxGoblin\TagTaxGoblin\obj\Debug\net10.0\refint\TagTaxGoblin.dll
+G:\TagTaxGoblin\TagTaxGoblin\obj\Debug\net10.0\TagTaxGoblin.pdb
+G:\TagTaxGoblin\TagTaxGoblin\obj\Debug\net10.0\TagTaxGoblin.genruntimeconfig.cache
+G:\TagTaxGoblin\TagTaxGoblin\obj\Debug\net10.0\ref\TagTaxGoblin.dll
